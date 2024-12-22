@@ -1,5 +1,6 @@
 package com.gotneb.lol_bookpedia.presentation.screen.champion_list
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -25,6 +26,7 @@ import com.gotneb.lol_bookpedia.ui.theme.LOLBookpediaTheme
 fun ChampionListScreen(
     state: ChampionListState,
     onValueChange: (String) -> Unit,
+    navigate: (String) -> Unit,
 ) {
     Scaffold { innerPadding ->
         Column(
@@ -58,7 +60,11 @@ fun ChampionListScreen(
                 items(state.filteredChampions.ifEmpty { state.champions }) { champion ->
                     ChampionCard(
                         champion,
-                        modifier = Modifier.animateItem()
+                        modifier = Modifier
+                            .animateItem()
+                            .clickable {
+                                champion.id?.let(navigate)
+                            }
                     )
                 }
             }

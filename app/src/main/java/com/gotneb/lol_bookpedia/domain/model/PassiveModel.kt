@@ -5,10 +5,10 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class PassiveModel(
-    @SerialName("description")
-    val name: String = "",
-    @SerialName("image")
-    val description: String = "",
     @SerialName("name")
+    val name: String? = "",
+    @SerialName("image")
     val image: ImageModel? = ImageModel(),
+    @SerialName("description")
+    val description: String? = "",
 )
