@@ -17,7 +17,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-private val TAG = "DETAILS"
+private const val TAG = "DETAILS"
 
 @HiltViewModel
 class ChampionDetailsViewModel @Inject constructor(

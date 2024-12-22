@@ -12,7 +12,6 @@ import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 import com.gotneb.lol_bookpedia.data.repository.API
 import com.gotneb.lol_bookpedia.domain.model.PassiveModel
-import com.gotneb.lol_bookpedia.domain.model.SpellModel
 
 @Composable
 fun ChampionPassive(
@@ -28,7 +27,7 @@ fun ChampionPassive(
         },
         leadingContent = {
             AsyncImage(
-                model = API.IMG_PASSIVE_URL + "${passive.image?.full}.png",
+                model = API.IMG_PASSIVE_URL + "${passive.image?.full}",
                 contentDescription = null,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier
