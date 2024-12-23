@@ -10,6 +10,7 @@ such as:
 - Hilt/Dagger (Dependency Injection)
 - Coil (Image loading)
 - Ktor (API requests)
+- Navigation
 
 ## 🤗 Acknowledgement
 Thanks to [Daniel](https://github.com/daniatitienei) who taught how to create this app in his course about Jetpack Compose.
