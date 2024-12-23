@@ -9,7 +9,7 @@ I made this project while following a course. I could learn a lot from it, inclu
 such as:
 - Hilt/Dagger (Dependency Injection)
 - Coil (Image loading)
-- Ktor (HTTP requests)
+- Ktor (API requests)
 
 ## 🤗 Acknowledgement
 Thanks to [Daniel](https://github.com/daniatitienei) who taught how to create this app in his course about Jetpack Compose.
